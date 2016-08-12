@@ -11,7 +11,6 @@ router.register(r'sessions', views.RunSessionViewSet)
 router.register(r'users', views.UserViewSet)
 urlpatterns = [
     url(r'^api/token/', obtain_auth_token, name='api-token'),
-    url(r'^api/token/', obtain_auth_token, name='api-token'),
     url(r'^api/', include(router.urls)),
     url(r'^admin/', admin.site.urls),
 
